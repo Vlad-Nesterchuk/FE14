@@ -1,0 +1,45 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.section{
+  margin-left: 20px;
+  width: 60%;
+}
+
+header {
+ background-color:ghostwhite;
+ padding: 20px;
+ margin-bottom: 10px;
+}
+
+aside {
+  width: 30%;
+  height: 20%;
+  background-color:lightgreen;
+  float: right;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: right
+}
+
+nav a {
+  margin-right: 10px;
+  border: 2px solid white ;
+  text-decoration: none;
+}
+
+footer {
+  background-color:ghostwhite;
+}
+
+#feadbeak {
+  background-color: tomato;
+  padding: 20px;
+  width: 600px;
+}
