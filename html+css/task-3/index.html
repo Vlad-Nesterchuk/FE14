@@ -1,65 +1,104 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Про мене</title>
-    <link rel="stylesheet" href="main.css" >
-  </head>
-  <body>
-    <header>
-      <h1>Про мене</h1>
-      <nav>
-      <a href="#short-information">Коротка інформація про мене</a>
-      <a href="#hobbies">Захоплення</a>
-      <a href="#skills">Навики</a>
-      <a href="#">Зворотній зв'язок</a>
+
+<head>
+  <title>ABOUT ME</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Rye&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#biography">Biography</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#skills">Skills</a>
+      <a href="#">Feadbeak</a>
     </nav>
-    </header>
-    <aside>
-      <h2>Корисні посилання</h2>
-      <picture>
-        <img src="" alt="">
-      </picture>
-    </aside>
-    <main>
-      <article class="section" id="short-information">
-        <h2>Коротка інформація про мене</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-          Commodi voluptate maiores consequuntur expedita, repellat ab. 
-          Nostrum atque officia, cupiditate repudiandae perspiciatis ullam  
-          eligendi itaque ab minus quaerat corrupti voluptatibus consequuntur? 
-        </p>
-      </article>
-      <article class="section" id="hobbies">
-        <h2>Захоплення</h2>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Commodi voluptate maiores consequuntur expedita, repellat ab. 
-            Nostrum atque officia, cupiditate repudiandae perspiciatis ullam 
-            eligendi itaque ab minus quaerat corrupti voluptatibus consequuntur? 
-          </p>
-      </article>
-      <article class="section" id="skills">
-          <h2>Навики</h2>
-          <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-              Commodi voluptate maiores consequuntur expedita, repellat ab. 
-              Nostrum atque officia, cupiditate repudiandae perspiciatis ullam 
-              eligendi itaque ab minus quaerat corrupti voluptatibus consequuntur?
-            </p>
-        </article>
-      <form id="feadbeak" method="POST" action="#">
-          <h3>Зворотній зв'язок</h3>
-          <p>Ваше ім'я</p>
-          <input type="text" size="40">
-          <p>Ваше повідомлення</p>
-          <textarea cols="60" rows="20"></textarea>
-          <br>
-          <input type="submit" value="Відправити">
-      </form>  
-    </main>
-        <footer>
-          <p> Дата створення сторінки <time>21-11-2019</time></p>
-        </footer>
-  </body>
+    <h1>HI, I'M VLAD NESTERCHUK.</h1>
+  </header>
+  <aside>
+    <h2>Gallery</h2>
+    <section class="gallery-containet">
+      <h3>Video</h3>
+        <video controls class="gallery-video gallery-element">
+          <source src="video/cat.mp4" type="video/mp4">
+        </video>
+    </section>
+    <section class="gallery-containet">
+      <h3>Photo</h3>
+        <picture>
+          <img src="img/cat2.jpg" alt="cat" class="gallery-element">
+        </picture>
+      </div>
+    </section>
+    <section class="gallery-container">
+      <h3>Audio</h3>
+        <audio controls class="gallery-element">
+          <source src="audio/mrrr.mp3" type="audio/mp3">
+        </audio>
+    </section>
+  </aside>
+  <main>
+    <article class="main-article" id="Biography">
+      <h3 class="article-name">Biography</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Commodi voluptate maiores consequuntur expedita, repellat ab.
+        Nostrum atque officia, cupiditate repudiandae perspiciatis ullam
+        eligendi itaque ab minus quaerat corrupti voluptatibus consequuntur?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Commodi voluptate maiores consequuntur expedita, repellat ab.
+        Nostrum atque officia, cupiditate repudiandae perspiciatis ullam
+        eligendi itaque ab minus quaerat corrupti voluptatibus consequuntur?
+      </p>
+    </article>
+    <article class="main-article" id="hobbies">
+      <h3 class="article-name">Hobbies</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Commodi voluptate maiores consequuntur expedita, repellat ab.
+        Nostrum atque officia, cupiditate repudiandae perspiciatis ullam
+        eligendi itaque ab minus quaerat corrupti voluptatibus consequuntur?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Commodi voluptate maiores consequuntur expedita, repellat ab.
+        Nostrum atque officia, cupiditate repudiandae perspiciatis ullam
+        eligendi itaque ab minus quaerat corrupti voluptatibus consequuntur?
+      </p>
+    </article>
+    <article class="main-article" id="skills">
+      <h3 class="article-name">Skills</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Commodi voluptate maiores consequuntur expedita, repellat ab.
+        Nostrum atque officia, cupiditate repudiandae perspiciatis ullam
+        eligendi itaque ab minus quaerat corrupti voluptatibus consequuntur?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Commodi voluptate maiores consequuntur expedita, repellat ab.
+        Nostrum atque officia, cupiditate repudiandae perspiciatis ullam
+        eligendi itaque ab minus quaerat corrupti voluptatibus consequuntur?
+      </p>
+    </article>
+  </main>
+  <footer>
+    <form id="feadbeak-form" method="POST" action="#">
+      <div id="form-name">
+        <h3>Feadbeak</h3>
+      </div>
+      <div id="form-contacts">
+        <input type="text" name="name" id="contacts-name" placeholder="Name">
+        <input type="email" name="email" id="contacts-email" placeholder="Email">
+      </div>
+      <div id="form-text">
+        <textarea id="feadbeak-text" placeholder="Message"></textarea>
+      </div>
+      <div id="form-submit">
+        <input type="submit" value="SUBMIT">
+      </div>
+    </form>
+  </footer>
+</body>
+
 </html>

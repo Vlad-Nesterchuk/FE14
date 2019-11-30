@@ -1,45 +1,170 @@
 main {
   display: flex;
   flex-direction: column;
+  margin:  10px  10px  10px 0px;
 }
 
-.section{
-  margin-left: 20px;
-  width: 60%;
+.main-article {
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.article-name {
+  text-align: center;
+  background-color: #3F87A6;
+  margin: 0;
+  height: 40px;
+  padding-top: 10px;
+}
+
+.main-article p {
+  text-align: justify;
+  padding: 20px;
+  font-size: 1.3em;
+  font-family: 'Baskervville', serif;
 }
 
 header {
- background-color:ghostwhite;
+ display: flex;
+ height: 50vh;
+ flex-direction: column;
+ align-items: center;
+ background: linear-gradient(45deg, rgb(211, 166, 136), #C5DDE8);
  padding: 20px;
  margin-bottom: 10px;
+ border: 5px solid #3F87A6;
+}
+
+header h1 {
+  font-family: 'Rye', cursive;
+  font-size: 6vw;
+  color: #2B3F4A;
+  text-align: center;
 }
 
 aside {
   width: 30%;
   height: 20%;
-  background-color:lightgreen;
   float: right;
-  padding: 20px;
+  padding: 10px;
+  border: 5px solid #3F87A6; 
+  background-color: #F5F9FA;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.gallery-element {
+  width: 100%;
 }
 
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: right
+  justify-content: flex-start;
+  width: 100%;
 }
 
 nav a {
+  box-sizing: border-box;
+  height: 30px;
+  width: 10%;
   margin-right: 10px;
-  border: 2px solid white ;
+  padding-top: 5px;
+  background-color: #3F87A6;
   text-decoration: none;
+  text-align: center;
+  color: #C5DAE3;
+  font-family: 'Viga', sans-serif;
+}
+
+nav a:hover {
+  background-color:  #234b5c;
 }
 
 footer {
   background-color:ghostwhite;
+  border: 5px solid #3F87A6;
 }
 
-#feadbeak {
-  background-color: tomato;
+#feadbeak-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas: "form-name text" "contacts text" "submit   text" ;
+  grid-gap: 5px;
   padding: 20px;
-  width: 600px;
+  width: 50%;
+  height: 200px;
+  background-color: #F5F9FA;
+}
+#form-name {
+  grid-area: form-name;
+}
+#form-contacts {
+  grid-area: contacts;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#form-text {
+  grid-area: text;
+}
+#form-submit {
+  grid-area: submit;
+}
+
+#feadbeak-form div {
+  text-align: center;
+}
+
+input[type="text"], input[type="email"] {
+  border: none;
+  border-bottom: 2px solid #3F87A6;
+  background-color: #F5F9FA;
+  border-radius: 5px;
+  text-align: center;
+  text-align: left;
+}
+
+#feadbeak-text {
+  background-color: #F5F9FA;
+  border: 2px solid #3F87A6;
+  border-radius: 10px;
+  outline: none;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="email"]:focus{
+  outline: none;
+}
+
+#feadbeak-contacts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#feadbeak-form h3 {
+  grid-area: form-name;
+  color: #3F87A6;
+}
+
+#feadbeak-form input[type="submit"] { 
+  border: 0;
+  background-color: #3F87A6;
+  margin-top: 10px;
+  color:#ffffff;
+  font-weight: bold;
+}
+#feadbeak-form input[type="submit"]:hover{
+  background-color: #234b5c;
+}
+
+footer {
+  display: flex;
+  justify-content: left;
 }
