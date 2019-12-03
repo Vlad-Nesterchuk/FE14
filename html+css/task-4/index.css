@@ -1,0 +1,85 @@
+
+
+.breadcrumbs {
+  display: inline-block;
+  margin: 150px 0;
+  counter-reset: flag;
+  color: black;
+  box-shadow: 0 0 2px #aaa;
+}
+
+.breadcrumbs a {
+  position: relative;
+  float: left;
+  padding-left: 60px;
+  padding-right: 30px;
+  text-decoration: none;
+  line-height: 36px;
+  color: black;
+  background: white;
+  background:#00BAD7;
+}
+
+.breadcrumbs a::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -23px;
+  z-index: 1;
+  width: 36px;
+  height: 36px;
+  transform: rotate(-45deg) scale(0.73);
+  background:#00BAD7;
+  border-right: 5px solid white;
+  border-bottom: 5px solid white;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:hover::after{
+  background-color: #243F85;
+}
+
+.breadcrumbs a:first-child {
+  padding-left: 46px;
+}
+
+.breadcrumbs a:first-child::before {
+  left: 14px;
+}
+
+/* Radio */
+
+.radio{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.radio__item::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #D5D5D5;
+  border-radius: 6px;
+  background-color: #D5D5D5;
+}
+
+.radio__item:checked::before{
+  border: 2px solid #397E25;
+  background-color: #397E25;
+}
+
+label{
+  position: relative;
+}
+.radio__item::after{
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #397E25;
+  border-radius: 8px;
+  left: 2px;
+  top: -0.5px;
+}
